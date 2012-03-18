@@ -168,36 +168,7 @@ namespace TEST_29072011
                 //ActiveBrowser.Actions.WaitForElement(new FindParam("id=NavPaneAjaxc_tvBusinessObjects"), 5000);
                ActiveBrowser.WaitForElement(5000, "id=NavPaneAjaxc_tvBusinessObjects");
             }
-            #region stare gowno
-            /*catch
-            {
-
-                #region otworz panel boczny
-                ActiveBrowser.Window.SetFocus();
-                Actions.WaitForElement(new FindParam("id=RAD_SPLITTER_BAR_COLLAPSE_Forward_RadSplitBar1"), 5000);
-                //Find.ById<HtmlInputButton>("RAD_SPLITTER_BAR_COLLAPSE_Forward_RadSplitBar1").MouseClick();
-
-
-                Desktop.Mouse.Click(MouseClickType.LeftClick, new System.Drawing.Point(Find.ById<HtmlInputButton>("RAD_SPLITTER_BAR_COLLAPSE_Forward_RadSplitBar1").GetRectangle().X,
-                    Find.ById<HtmlInputButton>("RAD_SPLITTER_BAR_COLLAPSE_Forward_RadSplitBar1").GetRectangle().Y
-               ));
-
-
-                //Find.ById<HtmlInputButton>("RAD_SPLITTER_BAR_COLLAPSE_Forward_RadSplitBar1").MouseClick();
-                try
-                {
-                    FindParam myDiv = new FindParam("id=NavPaneAjaxc_tvBusinessObjects");
-                    Actions.WaitForElement(new FindParam[] { myDiv }, 5000);
-                }
-                catch
-                {
-                    Find.ById<HtmlInputButton>("RAD_SPLITTER_BAR_COLLAPSE_Forward_RadSplitBar1").MouseClick();
-                    FindParam myDiv = new FindParam("id=NavPaneAjaxc_tvBusinessObjects");
-                    Actions.WaitForElement(new FindParam[] { myDiv }, 5000);
-                }
-                #endregion
-            }*/
-            #endregion
+            
             catch 
             {
                 ActiveBrowser.WaitForElement(50000,"id=RadSplitBar1");
