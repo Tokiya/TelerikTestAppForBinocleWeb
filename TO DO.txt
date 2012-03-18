@@ -1,0 +1,5 @@
+-> Download tests
+-> GotoSettingsPage fails
+-> GotoContactPage
+-> pamietac otym znikajacym znaku wodnym w wykresach przy zamianie szablonu kolorow
+-> PivotAddMeasure
